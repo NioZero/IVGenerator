@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IVGenerator.App", "Source\IVGenerator.App\IVGenerator.App.csproj", "{A74BE457-31B0-4FAC-9251-06ECF96823A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IVGenerator.Encryption", "Source\IVGenerator.Encryption\IVGenerator.Encryption.csproj", "{54965F4D-E6B5-4642-8459-59D644AA0007}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{C9E94724-57A4-48D5-8528-B29F5967A593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A74BE457-31B0-4FAC-9251-06ECF96823A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74BE457-31B0-4FAC-9251-06ECF96823A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74BE457-31B0-4FAC-9251-06ECF96823A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74BE457-31B0-4FAC-9251-06ECF96823A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54965F4D-E6B5-4642-8459-59D644AA0007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54965F4D-E6B5-4642-8459-59D644AA0007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54965F4D-E6B5-4642-8459-59D644AA0007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54965F4D-E6B5-4642-8459-59D644AA0007}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{54965F4D-E6B5-4642-8459-59D644AA0007} = {C9E94724-57A4-48D5-8528-B29F5967A593}
+	EndGlobalSection
+EndGlobal
