@@ -1,8 +1,7 @@
 ﻿using IVGenerator.Encryption;
 using System;
-using System.Text;
-using System.Windows.Forms;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace IVGenerator.App
 {
@@ -25,13 +24,15 @@ namespace IVGenerator.App
 
         #region events
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGenerate_Click(object sender, EventArgs e)
         {
-            var vector = RijndaelEncryptorHelper.GenerateVector();
+            var keys = RijndaelEncryptorHelper.GenerateKeys();
 
-            var vectorString = vector.ToList().Select(n => string.Format("0x{0:x2}", n));
+            var keyString = keys.Key.ToList().Select(n => string.Format("0x{0:x2}", n));
+            var ivString = keys.IV.ToList().Select(n => string.Format("0x{0:x2}", n));
 
-            textBox1.Text = string.Join(", ", vectorString);
+            txtPrivateKey.Text = string.Join(", ", keyString);
+            txtIV.Text = string.Join(", ", ivString);
         }
 
         #endregion

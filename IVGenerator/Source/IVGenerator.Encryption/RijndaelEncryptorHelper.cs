@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Security.Cryptography;
 
 namespace IVGenerator.Encryption
 {
     public static class RijndaelEncryptorHelper
     {
-        public static byte[] GenerateVector()
+        public static CryptoKeys GenerateKeys()
         {
             using (var des = new RijndaelManaged())
             {
+                des.GenerateKey();
                 des.GenerateIV();
 
-                return des.IV;
+                var keys = new CryptoKeys();
+                keys.Key = des.Key;
+                keys.IV = des.IV;
+
+                return keys;
             }
         }
     }
